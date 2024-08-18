@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel with Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Travel with Us</h1>
+    </header>
+
+    <main>
+        <section id="featured-destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destination-list">
+                <!-- Destinations will be added dynamically here -->
+            </div>
+        </section>
+
+        <section id="book-trip">
+            <h2>Book Your Trip</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required minlength="2" placeholder="Your Name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email"><br><br>
+
+                <label for="destination">Choose Your Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="" disabled selected>Select a destination</option>
+                    <option value="paris">Paris</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="nyc">New York City</option>
+                </select><br><br>
+
+                <button type="submit">Book Now</button>
+            </form>
+            <div id="confirmation-message"></div>
+            <div>
+                <h4>Name : </h4>
+                <h4>Email : </h4>
+                <h4>Destination: </h4>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel with Us</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+

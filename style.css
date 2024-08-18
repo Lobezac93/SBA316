@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+h1, h2 {
+  margin: 0.5em 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.destination-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.destination {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1em;
+  width: 30%;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+
+.destination img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.invalid {
+  border-color: red;
+}
+
+.confirmation-active {
+  color: green;
+  font-weight: bold;
+  margin-top: 1em;
+}
