@@ -3,56 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel with Us</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Travel with Us</h1>
+        <h1 id="main-title">Welcome to Travel Cameroun</h1>
     </header>
-
     <main>
-        <section id="featured-destinations">
-            <h2>Featured Destinations</h2>
-            <div class="destination-list">
-                <!-- Destinations will be added dynamically here -->
-            </div>
+        <section id="destinations">
+            <h2>Popular Destinations</h2>
+            <ul id="destination-list">
+                <li>Yaounde</li>
+                <li>Buea</li>
+                <li>Douala</li>
+            </ul>
         </section>
-
-        <section id="book-trip">
-            <h2>Book Your Trip</h2>
-            <form id="booking-form">
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required minlength="2" placeholder="Your Name"><br><br>
-
+                <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Your Email"><br><br>
-
-                <label for="destination">Choose Your Destination:</label>
-                <select id="destination" name="destination" required>
-                    <option value="" disabled selected>Select a destination</option>
-                    <option value="paris">Paris</option>
-                    <option value="tokyo">Tokyo</option>
-                    <option value="nyc">New York City</option>
-                </select><br><br>
-
-                <button type="submit">Book Now</button>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
             </form>
-            <div id="confirmation-message"></div>
-            <div>
-                <h4>Name : </h4>
-                <h4>Email : </h4>
-                <h4>Destination: </h4>
-            </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Travel with Us</p>
-    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
+
+
 
 
 
